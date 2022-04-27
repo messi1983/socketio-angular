@@ -3,8 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  production: false,
+  SOCKET_ENDPOINT: 'http://localhost:3000',
+  MS_USERS_BASE_URL: 'http://localhost:9298/users',
+  MS_USERS_EMAIL: 'jacques@gmail.com',
+  MS_USERS_PASSWORD: 'Testing123',
+  MS_MESSAGES_BASE_URL: 'http://localhost:3000/api/ms-chat'
+}
 
 /*
  * For easier debugging in development mode, you can import the following file

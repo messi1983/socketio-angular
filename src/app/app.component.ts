@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'socketio-angular';
+  title = 'socketio-angular'
+
+  constructor() {}
+  
+  ngOnInit() {
+  }
+
+  ngOnDestroy() {
+  }
+  
 }

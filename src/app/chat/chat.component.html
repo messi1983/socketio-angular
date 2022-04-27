@@ -1,0 +1,28 @@
+<div class="container ms-chat">
+    
+    <h1>Chat App</h1>
+
+    <div class="chat col-md-12 col-xs-12">
+      <div id="sidebar" class="chat__sidebar"></div>
+      <div class="chat__main">
+        <div id="messages" class="chat__messages">
+            <div class="message" *ngFor="let msg of messages">
+                <p>
+                  <span class="message__name">{{msg.username}}</span>
+                  <span class="message__meta">{{msg.createdAt}}</span>
+                </p>
+                <p>{{msg.content}}</p>
+            </div>
+        </div>
+        <div class="compose">
+          <form id="user" [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+            <input #message placeholder="Message" autocomplete="off" formControlName="text"/>
+            <button type="submit" [disabled]="disabledTextMessage">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+
+</div>
